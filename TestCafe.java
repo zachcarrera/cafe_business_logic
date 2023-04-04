@@ -20,7 +20,7 @@ public class TestCafe {
         double[] lineItems = {3.5, 1.5, 4.0, 4.5};
         System.out.printf("Order total: %s \n\n",appTest.getOrderTotal(lineItems));
         
-        // System.out.println("----- Display Menu Test-----");
+        System.out.println("----- Display Menu Test-----");
         
         ArrayList<String> menu = new ArrayList<String>();
         menu.add("drip coffee");
@@ -29,13 +29,13 @@ public class TestCafe {
         menu.add("mocha");
         appTest.displayMenu(menu);
     
-        // System.out.println("\n----- Add Customer Test-----");
-        // ArrayList<String> customers = new ArrayList<String>();
-        // // --- Test 4 times ---
-        // for (int i = 0; i < 4; i++) {
-        //     appTest.addCustomer(customers);
-        //     System.out.println("\n");
-        // }
+        System.out.println("\n----- Add Customer Test-----");
+        ArrayList<String> customers = new ArrayList<String>();
+        // --- Test 4 times ---
+        for (int i = 0; i < 4; i++) {
+            appTest.addCustomer(customers);
+            System.out.println("\n");
+        }
 
         System.out.println("\n----- Print Price Chart Test -----");
         appTest.printPriceChart("Columbian Coffee Grounds", 15.000, 3);
